@@ -8,11 +8,11 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Header/>
+      
       <Router>
         <Routes>
-          <Route exact path="/" element={<MyContainer />} />  
-          <Route exact path="/about" element={<About />} />
+          <Route exact path="/" element={<> <Header /> <MyContainer /> </>} />  
+          <Route exact path="/about" element={<> <Header /> <About /> </> } />
         </Routes>        
       </Router>
     </div>

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
+import { Link as RouterLink } from 'react-router-dom'
 
 export default function Header() {
     return (
@@ -19,7 +20,8 @@ export default function Header() {
               
               ></IconButton>
                 
-              <Button color="inherit">Login</Button>
+              <Button component={RouterLink} to="/" color="inherit">Home</Button>
+              <Button component={RouterLink} to="/about" color="inherit">About</Button>
             </Toolbar>
           </AppBar>
         </Box>
