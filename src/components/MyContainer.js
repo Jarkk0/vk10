@@ -10,6 +10,7 @@ function MyContainer() {
     return (
         <div>
             <h3>{ MyHOC( Component, { name: "Kalle"})} </h3>
+            
             <h3>{t('This is the front page')}</h3>
         </div>
     )
