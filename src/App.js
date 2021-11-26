@@ -11,8 +11,8 @@ function App() {
       <Header/>
       <Router>
         <Routes>
-          <Route path="/" element={MyContainer} />  
-          <Route path="/about" element={About} />
+          <Route exact path="/" element={<MyContainer />} />  
+          <Route exact path="/about" element={<About />} />
         </Routes>        
       </Router>
     </div>
